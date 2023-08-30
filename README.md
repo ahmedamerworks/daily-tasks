@@ -4,6 +4,10 @@ This project was an attempt at creating a daily tasks web application with worki
 
 The goal was to create the app using React framework and style it minamally using CSS.
 
+# Live Demo
+
+[click here!](https://daily-task-ahmed.netlify.app/)
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
