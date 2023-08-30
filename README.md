@@ -4,6 +4,8 @@ This project was an attempt at creating a daily tasks web application with worki
 
 The goal was to create the app using React framework and style it minamally using CSS.
 
+!!! Currently, I am still figuring out how to optomize the live display of time and I ran into a few errors concerning the functions that display time in {App.js}
+
 # Live Demo
 
 [click here!](https://daily-task-ahmed.netlify.app/)
