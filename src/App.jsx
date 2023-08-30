@@ -36,20 +36,20 @@ export default function App() {
     });
   }
 
-  function displayTime() {
-    let datetime = new Date();
-    document.getElementById("time").textContent = datetime;
-  }
+  // function displayTime() {
+  //   const datetime = new Date().toLocaleString();
+  //   document.getElementById("time").textContent = datetime;
+  // }
 
-  function updateTime() {
-    let timeDisplayed = document.getElementById("time");
-    let dateString = new Date().toLocaleString();
-    let formattedString = dateString.replace(",", "-");
-    timeDisplayed.textContent = formattedString;
-  }
+  // function updateTime() {
+  //   const timeDisplayed = document.getElementById("time");
+  //   const dateString = new Date().toLocaleString();
+  //   const formattedString = dateString.replace(",", "-");
+  //   timeDisplayed.textContent = formattedString;
+  // }
 
-  displayTime();
-  setInterval(updateTime, 1000);
+  // displayTime();
+  // setInterval(updateTime, 1000);
 
   return (
     <>
