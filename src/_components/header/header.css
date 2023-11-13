@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    font-size: x-small;
+    position: relative;
+    bottom: auto;
+  }
+}

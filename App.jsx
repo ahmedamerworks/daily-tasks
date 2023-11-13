@@ -36,24 +36,8 @@ export default function App() {
     });
   }
 
-  // function displayTime() {
-  //   const datetime = new Date().toLocaleString();
-  //   document.getElementById("time").textContent = datetime;
-  // }
-
-  // function updateTime() {
-  //   const timeDisplayed = document.getElementById("time");
-  //   const dateString = new Date().toLocaleString();
-  //   const formattedString = dateString.replace(",", "-");
-  //   timeDisplayed.textContent = formattedString;
-  // }
-
-  // displayTime();
-  // setInterval(updateTime, 1000);
-
   return (
     <>
-      <span id="time"></span>
       <form onSubmit={handleSubmit} className="new-item-form">
         <div className="form-row">
           <label htmlFor="item">New Daily Task</label>
