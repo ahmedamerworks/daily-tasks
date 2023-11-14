@@ -1,10 +1,16 @@
 header {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
   width: 100%;
-  margin-bottom: 20px;
-  position: fixed;
-  bottom: 80%;
+  margin-bottom: 40px;
+  /* position: fixed;
+  bottom: 70%; */
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 600px) {

@@ -4,7 +4,7 @@
   --background-color: #242424;
 
   --primary-color: wheat;
-  --secondary-color: skyblue;
+  --secondary-color: #242424;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 .app-container {
   margin: 0%;
   padding: 5vh;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

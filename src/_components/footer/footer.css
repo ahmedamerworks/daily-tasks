@@ -2,15 +2,17 @@ footer {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 20px;
   position: fixed;
-  bottom: 10%;
+  bottom: 20%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 600px) {
   footer {
     font-size: x-small;
-    position: relative;
-    bottom: auto;
   }
 }

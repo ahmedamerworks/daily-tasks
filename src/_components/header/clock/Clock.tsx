@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./clock.css";
 
-type Props = {};
-
-const Clock = (props: Props) => {
+const Clock = () => {
   const [currentTime, setCurrentTime] = useState<string>(
     new Date().toLocaleTimeString()
   );
