@@ -1,0 +1,48 @@
+.form-container input {
+  background: var(--primary-color);
+  border-radius: 40px;
+  border-color: var(--secondary-color);
+  padding: 10px 5px 10px 5px;
+  width: 250px;
+  outline: none;
+  color: var(--secondary-color);
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 20px;
+  box-shadow: -2px 1px;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.btn {
+  background: var(--primary-color);
+  border-color: var(--secondary-color);
+  border-radius: 40px;
+  padding: 5px 14px 5px 14px;
+  font-family: "Agbalumo";
+  color: var(--secondary-color);
+  margin-left: 20px;
+  box-shadow: -2px 1px;
+  cursor: pointer;
+}
+
+.list-item {
+  color: var(---primary-color);
+  font-size: 120%;
+  display: inline;
+}
+
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  margin-right: 15px;
+}
