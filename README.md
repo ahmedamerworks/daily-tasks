@@ -2,9 +2,7 @@
 
 This project was an attempt at creating a daily tasks web application with working buttons and a date display that updates in real time.
 
-The goal was to create the app using React framework and style it minamally using CSS.
-
-!!! Currently, I am still figuring out how to optomize the live display of time and I ran into a few errors concerning the functions that display time in {App.js}
+At the current stage, the Tasks component is functional and the time display works - Next steps are to incorporate a date with the time, a {delete all tasks} button, and a better way to stack tasks in case they stretch outside the webpage ~
 
 # Live Demo
 
