@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dosis:wght@200&family=Mooli&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Kdam+Thmor+Pro&family=Mooli&display=swap");
 
 :root {
   --background-color: #242424;
 
   --primary-color: wheat;
-  --secondary-color: #242424;
+  --secondary-color: indianred;
 }
 
 body {
-  font-family: Agbalumo;
+  font-family: "Kdam Thmor Pro", sans-serif;
   background: var(--background-color);
   color: var(--primary-color);
 }

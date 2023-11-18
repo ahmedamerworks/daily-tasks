@@ -7,15 +7,24 @@
   outline: none;
   color: var(--secondary-color);
   text-align: center;
-  font-weight: 900;
+  font-weight: 500;
   margin-bottom: 20px;
   box-shadow: -2px 1px;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: row;
 }
 
 .tasks-list {
   display: flex;
   flex-direction: column;
   gap: 2px;
+}
+
+.tasks-list_hidden {
+  display: none;
 }
 
 .btn {
@@ -31,9 +40,14 @@
 }
 
 .list-item {
-  color: var(---primary-color);
-  font-size: 120%;
-  display: inline;
+  color: var(--primary-color);
+  font-size: larger;
+  width: 100%;
+  display: flex;
+}
+
+.list-item p {
+  color: var(--secondary-color);
 }
 
 input[type="checkbox"] {
