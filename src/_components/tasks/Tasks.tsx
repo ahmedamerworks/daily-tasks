@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./tasks.css";
-import { todo } from "node:test";
 
 interface Todo {
   id: string;
   title: string;
   completed: boolean;
+  number: number;
+  dateCreated: string;
 }
 
 type Todos = Array<Todo>;
@@ -13,14 +14,23 @@ type Todos = Array<Todo>;
 const Tasks = () => {
   const [newItem, setNewItem] = useState<string>("");
   const [todos, setTodos] = useState<Todos>([]);
+  const [showList, setShowList] = useState<boolean>(true);
 
   function handleSubmit(e: React.ChangeEvent<HTMLFormElement>): void {
     e.preventDefault();
 
     setTodos((currentTodos): Todos => {
+      const timeHolder = new Date().toLocaleTimeString();
+
       return [
         ...currentTodos,
-        { id: crypto.randomUUID(), title: newItem, completed: false },
+        {
+          id: crypto.randomUUID(),
+          title: newItem,
+          completed: false,
+          number: currentTodos.length,
+          dateCreated: timeHolder,
+        },
       ];
     });
 
@@ -50,7 +60,10 @@ const Tasks = () => {
       <form onSubmit={handleSubmit} className="form-container">
         <input
           value={newItem}
-          onChange={(e) => setNewItem(e.target.value)}
+          onChange={(e) => {
+            setNewItem(e.target.value);
+            setShowList(true);
+          }}
           type="text"
           className="form-input"
           placeholder="Do the dishes..."
@@ -58,14 +71,26 @@ const Tasks = () => {
         <button className="btn" type="submit">
           Add Task
         </button>
-        {/* <button className="btn" onClick={() => {}}>Delete All Tasks</button> */}
       </form>
+      <div className="form-btns">
+        <button
+          className="btn"
+          onClick={() => (showList ? setShowList(false) : setShowList(true))}
+        >
+          {showList ? "Hide List!" : "Show List!"}
+        </button>
+        <button className="btn" onClick={() => setTodos([])}>
+          Delete All Tasks!!!
+        </button>{" "}
+      </div>
       <h1>Task List</h1>
-      <ul className="tasks-list">
-        {todos.length === 0 && "No Tasks Created"}
-        {todos.map((todo) => {
+      <ul className={showList ? "tasks-list" : "tasks-list_hidden"}>
+        {todos.map((todo: Todo) => {
           return (
             <li className="list-item" key={todo.id}>
+              {/* <p>
+                Task: {todo.number + 1} - {todo.dateCreated}
+              </p> */}
               <label>
                 <input
                   className="list-checkbox"
@@ -81,6 +106,7 @@ const Tasks = () => {
             </li>
           );
         })}
+        {todos.length === 0 && "No Tasks Created"}
       </ul>
     </>
   );

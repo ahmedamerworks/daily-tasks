@@ -8,6 +8,16 @@ At the current stage, the Tasks component is functional and the time display wor
 
 [click here!](https://daily-task-ahmed.netlify.app/)
 
+Known bugs:
+
+- Not fully responsive for mobile devices.
+- You are able to add a nameless task.
+
+Updates 18/11/2023:
+
+- New and more intuitive font-style
+- Two new buttons: One to delete all tasks, one to show them!
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
