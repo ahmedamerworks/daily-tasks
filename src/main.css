@@ -16,7 +16,7 @@ body {
 
 .app-container {
   margin: 0%;
-  padding: 5vh;
+  padding: 2vh;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -18,10 +18,12 @@ const Tasks = () => {
 
   function handleSubmit(e: React.ChangeEvent<HTMLFormElement>): void {
     e.preventDefault();
-
+    if (!newItem) {
+      alert("Input field must not be empty!");
+      return;
+    }
     setTodos((currentTodos): Todos => {
       const timeHolder = new Date().toLocaleTimeString();
-
       return [
         ...currentTodos,
         {
@@ -68,7 +70,7 @@ const Tasks = () => {
           className="form-input"
           placeholder="Do the dishes..."
         />
-        <button className="btn" type="submit">
+        <button className="phone-hide_btn btn" type="submit">
           Add Task
         </button>
       </form>
@@ -83,14 +85,10 @@ const Tasks = () => {
           Delete All Tasks!!!
         </button>{" "}
       </div>
-      <h1>Task List</h1>
       <ul className={showList ? "tasks-list" : "tasks-list_hidden"}>
         {todos.map((todo: Todo) => {
           return (
             <li className="list-item" key={todo.id}>
-              {/* <p>
-                Task: {todo.number + 1} - {todo.dateCreated}
-              </p> */}
               <label>
                 <input
                   className="list-checkbox"
