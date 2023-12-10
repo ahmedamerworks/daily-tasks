@@ -1,8 +1,6 @@
 # Project Summary
 
-This project was an attempt at creating a daily tasks web application with working buttons and a date display that updates in real time.
-
-At the current stage, the Tasks component is functional and the time display works - Next steps are to incorporate a date with the time, a {delete all tasks} button, and a better way to stack tasks in case they stretch outside the webpage ~
+This project attempted to create a daily tasks web application with working buttons and a date display that updates in real-time.
 
 # Live Demo
 
@@ -11,12 +9,14 @@ At the current stage, the Tasks component is functional and the time display wor
 Known bugs:
 
 - Not fully responsive for mobile devices.
-- You are able to add a nameless task.
+- There is no cap on how many tasks you can add.
 
-Updates 18/11/2023:
+Updates 10/12/2023:
 
-- New and more intuitive font-style
-- Two new buttons: One to delete all tasks, one to show them!
+- Fixed bug where you used to be able to add blank tasks.
+- Time is now updating each second and displaying correctly.
+- Now the task list is in a grid layout and will stack only a certain amount in each column.
+- Two new buttons: One to delete all tasks, one to hide/show them!
 
 # React + Vite
 
